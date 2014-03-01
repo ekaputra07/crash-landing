@@ -1,0 +1,1558 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0xb384cfc0, pid=3920, tid=2996722496
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_51-b13) (build 1.7.0_51-b13)
+# Java VM: Java HotSpot(TM) Client VM (24.51-b03 mixed mode, sharing linux-x86 )
+# Problematic frame:
+# 
+[error occurred during error reporting (printing problematic frame), id 0x7]
+
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0xaea8fc00):  JavaThread "LWJGL Application" [_thread_in_native, id=3939, stack(0xb2995000,0xb29e6000)]
+
+siginfo:si_signo=SIGBUS: si_errno=0, si_code=2 (BUS_ADRERR), si_addr=0xb384cfc0
+
+Registers:
+EAX=0xb29e4f00, EBX=0x00000001, ECX=0x8eb701f8, EDX=0xaea8fd30
+ESP=0xb29e4e2c, EBP=0xb29e4e58, ESI=0xb29e4e40, EDI=0xaea8fc00
+EIP=0xb384cfc0, EFLAGS=0x00210246, CR2=0xb384cfc0
+
+Top of Stack: (sp=0xb29e4e2c)
+0xb29e4e2c:   b4a3f7de aea8fd30 b29e4e40 b29e4e4c
+0xb29e4e3c:   b4a89df4 8412c198 84144a08 b29e4f4c
+0xb29e4e4c:   b4aa2f68 00000015 8eb93f78 b29e4f4c
+0xb29e4e5c:   b4a9a694 aea8fd30 b29e4e78 00000001
+0xb29e4e6c:   00001010 b29e4e90 b29e4f4c b29e4ed8
+0xb29e4e7c:   00000000 0000003d 8431bd48 00077ff4
+0xb29e4e8c:   00000000 24aaa19e ffe255da 24aaa19e
+0xb29e4e9c:   ffe255da fff83db4 ffffffff 24b9e3de 
+
+Instructions: (pc=0xb384cfc0)
+0xb384cfa0:   
+[error occurred during error reporting (printing registers, top of stack, instructions near pc), id 0x7]
+
+Register to memory mapping:
+
+EAX=0xb29e4f00 is pointing into the stack for thread: 0xaea8fc00
+EBX=0x00000001 is an unknown value
+ECX=0x8eb701f8 is an oop
+{constant pool cache} 
+ - klass: {other class}
+                 -------------
+  0  (0x8eb70208)  [00|00|    1]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  1  (0x8eb70218)  [00|00|    2]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  2  (0x8eb70228)  [00|00|    3]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  3  (0x8eb70238)  [00|b7|    5]
+                 [   0x8eb73000]
+                 [   0x00000000]
+                 [   0x80000002]
+                 -------------
+  4  (0x8eb70248)  [00|b7|    6]
+                 [   0x8eb69218]
+                 [   0x00000000]
+                 [   0x80000004]
+                 -------------
+  5  (0x8eb70258)  [00|00|    8]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  6  (0x8eb70268)  [00|00|    9]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  7  (0x8eb70278)  [00|00|   10]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+  8  (0x8eb70288)  [00|b7|   11]
+                 [   0x93540180]
+                 [   0x00000000]
+                 [   0x80000001]
+                 -------------
+  9  (0x8eb70298)  [b5|b4|   12]
+                 [   0x8412ca88]
+                 [   0x0000000c]
+                 [   0x04000007]
+                 -------------
+ 10  (0x8eb702a8)  [00|b7|   14]
+                 [   0x8eb63c58]
+                 [   0x00000000]
+                 [   0x80000001]
+                 -------------
+ 11  (0x8eb702b8)  [b5|b4|   15]
+                 [   0x8412ca88]
+                 [   0x0000002c]
+                 [   0x74400008]
+                 -------------
+ 12  (0x8eb702c8)  [b5|b4|   16]
+                 [   0x8412ca88]
+                 [   0x00000030]
+                 [   0x74400009]
+                 -------------
+ 13  (0x8eb702d8)  [b5|b4|   17]
+                 [   0x8412ca88]
+                 [   0x00000034]
+                 [   0x7440000a]
+                 -------------
+ 14  (0x8eb702e8)  [b5|b4|   18]
+                 [   0x8412ca88]
+                 [   0x00000008]
+                 [   0x3400000b]
+                 -------------
+ 15  (0x8eb702f8)  [00|b7|   20]
+                 [   0x8eb831c8]
+                 [   0x00000000]
+                 [   0x80000001]
+                 -------------
+ 16  (0x8eb70308)  [b5|b4|   21]
+                 [   0x8412ca88]
+                 [   0x0000003c]
+                 [   0x7400000d]
+                 -------------
+ 17  (0x8eb70318)  [00|b8|   22]
+                 [   0x8eb89bd0]
+                 [   0x00000000]
+                 [   0x80400000]
+                 -------------
+ 18  (0x8eb70328)  [b5|b4|   23]
+                 [   0x8412cb70]
+                 [   0x00000050]
+                 [   0x7400000f]
+                 -------------
+ 19  (0x8eb70338)  [00|00|   24]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 20  (0x8eb70348)  [00|00|   25]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 21  (0x8eb70358)  [b5|b4|   26]
+                 [   0x8412ca88]
+                 [   0x00000010]
+                 [   0x74400000]
+                 -------------
+ 22  (0x8eb70368)  [b3|b2|   27]
+                 [   0x8412cb70]
+                 [   0x00000070]
+                 [   0x04000000]
+                 -------------
+ 23  (0x8eb70378)  [b5|b4|   29]
+                 [   0x8412cb70]
+                 [   0x00000034]
+                 [   0x34000012]
+                 -------------
+ 24  (0x8eb70388)  [b5|b4|   30]
+                 [   0x8412cb70]
+                 [   0x0000003c]
+                 [   0x34000014]
+                 -------------
+ 25  (0x8eb70398)  [b5|b4|   31]
+                 [   0x8412cb70]
+                 [   0x00000038]
+                 [   0x34000013]
+                 -------------
+ 26  (0x8eb703a8)  [00|b7|   32]
+                 [   0x8eb8dc70]
+                 [   0x00000000]
+                 [   0x80000004]
+                 -------------
+ 27  (0x8eb703b8)  [b5|b4|   33]
+                 [   0x8412ca88]
+                 [   0x00000014]
+                 [   0x74000001]
+                 -------------
+ 28  (0x8eb703c8)  [00|b7|   35]
+                 [   0x8ebe7978]
+                 [   0x00000000]
+                 [   0x80400001]
+                 -------------
+ 29  (0x8eb703d8)  [b5|b4|   36]
+                 [   0x8412ca88]
+                 [   0x00000018]
+                 [   0x74400002]
+                 -------------
+ 30  (0x8eb703e8)  [00|b7|   38]
+                 [   0x8ebede90]
+                 [   0x00000000]
+                 [   0x80400001]
+                 -------------
+ 31  (0x8eb703f8)  [b5|b4|   39]
+                 [   0x8412ca88]
+                 [   0x0000001c]
+                 [   0x74400003]
+                 -------------
+ 32  (0x8eb70408)  [00|b7|   41]
+                 [   0x8ebfaf40]
+                 [   0x00000000]
+                 [   0x80000001]
+                 -------------
+ 33  (0x8eb70418)  [b5|b4|   42]
+                 [   0x8412ca88]
+                 [   0x00000020]
+                 [   0x74400004]
+                 -------------
+ 34  (0x8eb70428)  [b5|b4|   43]
+                 [   0x8412ca88]
+                 [   0x00000024]
+                 [   0x74400005]
+                 -------------
+ 35  (0x8eb70438)  [b5|b4|   44]
+                 [   0x8412cb70]
+                 [   0x00000058]
+                 [   0x74000019]
+                 -------------
+ 36  (0x8eb70448)  [b5|b4|   45]
+                 [   0x8412ca88]
+                 [   0x00000038]
+                 [   0x7400000c]
+                 -------------
+ 37  (0x8eb70458)  [b3|b2|   46]
+                 [   0x8412ae68]
+                 [   0x00000070]
+                 [   0x74000000]
+                 -------------
+ 38  (0x8eb70468)  [b3|b2|   47]
+                 [   0x8412ae68]
+                 [   0x00000074]
+                 [   0x74000001]
+                 -------------
+ 39  (0x8eb70478)  [b3|b2|   48]
+                 [   0x8412ae68]
+                 [   0x00000078]
+                 [   0x74000002]
+                 -------------
+ 40  (0x8eb70488)  [b3|b2|   49]
+                 [   0x8412ae68]
+                 [   0x00000080]
+                 [   0x74000004]
+                 -------------
+ 41  (0x8eb70498)  [b3|b2|   50]
+                 [   0x8412ae68]
+                 [   0x0000007c]
+                 [   0x74000003]
+                 -------------
+ 42  (0x8eb704a8)  [b3|b2|   51]
+                 [   0x8412ae68]
+                 [   0x00000084]
+                 [   0x74000005]
+                 -------------
+ 43  (0x8eb704b8)  [00|b7|   52]
+                 [   0x8eb693a8]
+                 [   0x00000000]
+                 [   0x80000001]
+                 -------------
+ 44  (0x8eb704c8)  [b5|b4|   53]
+                 [   0x8412cb70]
+                 [   0x00000024]
+                 [   0x34000009]
+                 -------------
+ 45  (0x8eb704d8)  [b5|b4|   54]
+                 [   0x8412cb70]
+                 [   0x00000028]
+                 [   0x3400000a]
+                 -------------
+ 46  (0x8eb704e8)  [00|00|   55]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 47  (0x8eb704f8)  [00|00|   56]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 48  (0x8eb70508)  [00|b7|   59]
+                 [   0x8eb6e9f0]
+                 [   0x00000000]
+                 [   0x80000003]
+                 -------------
+ 49  (0x8eb70518)  [b5|b4|   60]
+                 [   0x8412ca88]
+                 [   0x00000028]
+                 [   0x74000006]
+                 -------------
+ 50  (0x8eb70528)  [b6|00|   61]
+                 [   0x00000000]
+                 [   0x00000009]
+                 [   0x80000001]
+                 -------------
+ 51  (0x8eb70538)  [b6|00|   62]
+                 [   0x00000000]
+                 [   0x0000000f]
+                 [   0x80000001]
+                 -------------
+ 52  (0x8eb70548)  [00|00|   65]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 53  (0x8eb70558)  [00|b9|   66]
+                 [   0x8eb5e950]
+                 [   0x00000002]
+                 [   0x80000001]
+                 -------------
+ 54  (0x8eb70568)  [b6|00|   67]
+                 [   0x00000000]
+                 [   0x00000008]
+                 [   0x30000001]
+                 -------------
+ 55  (0x8eb70578)  [b6|00|   68]
+                 [   0x00000000]
+                 [   0x00000007]
+                 [   0x30000001]
+                 -------------
+ 56  (0x8eb70588)  [00|b9|   69]
+                 [   0x8eb5e950]
+                 [   0x00000001]
+                 [   0x80000003]
+                 -------------
+ 57  (0x8eb70598)  [b5|b4|   70]
+                 [   0x8412caf8]
+                 [   0x00000025]
+                 [   0x0400000d]
+                 -------------
+ 58  (0x8eb705a8)  [00|b8|   71]
+                 [   0x9354d1f0]
+                 [   0x00000000]
+                 [   0x40400000]
+                 -------------
+ 59  (0x8eb705b8)  [b5|b4|   72]
+                 [   0x8412caf8]
+                 [   0x00000010]
+                 [   0x4400000a]
+                 -------------
+ 60  (0x8eb705c8)  [00|b8|   73]
+                 [   0x8ec10be8]
+                 [   0x00000000]
+                 [   0x80400000]
+                 -------------
+ 61  (0x8eb705d8)  [00|b8|   74]
+                 [   0x8ec10900]
+                 [   0x00000000]
+                 [   0x00400000]
+                 -------------
+ 62  (0x8eb705e8)  [00|00|   75]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 63  (0x8eb705f8)  [00|b8|   76]
+                 [   0x8ec10a70]
+                 [   0x00000000]
+                 [   0x00400000]
+                 -------------
+ 64  (0x8eb70608)  [b6|00|   77]
+                 [   0x00000000]
+                 [   0x00000011]
+                 [   0x70000001]
+                 -------------
+ 65  (0x8eb70618)  [00|b9|   78]
+                 [   0x935864f0]
+                 [   0x00000000]
+                 [   0x00000001]
+                 -------------
+ 66  (0x8eb70628)  [00|00|   79]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 67  (0x8eb70638)  [00|00|   81]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 68  (0x8eb70648)  [00|b9|   82]
+                 [   0x8eb5e950]
+                 [   0x00000005]
+                 [   0x80000001]
+                 -------------
+ 69  (0x8eb70658)  [00|00|   83]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 70  (0x8eb70668)  [00|00|   84]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 71  (0x8eb70678)  [b5|b4|   85]
+                 [   0x8412caf8]
+                 [   0x0000003c]
+                 [   0x7400000b]
+                 -------------
+ 72  (0x8eb70688)  [00|00|   86]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 73  (0x8eb70698)  [00|00|   87]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 74  (0x8eb706a8)  [00|00|   88]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 75  (0x8eb706b8)  [00|00|   89]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 76  (0x8eb706c8)  [b5|b4|   90]
+                 [   0x8412caf8]
+                 [   0x00000040]
+                 [   0x7400000e]
+                 -------------
+ 77  (0x8eb706d8)  [00|b8|   91]
+                 [   0x8ec12978]
+                 [   0x00000000]
+                 [   0x30400000]
+                 -------------
+ 78  (0x8eb706e8)  [b5|b4|   92]
+                 [   0x8412cb70]
+                 [   0x0000002c]
+                 [   0x3400000b]
+                 -------------
+ 79  (0x8eb706f8)  [00|b8|   93]
+                 [   0x8ec12a18]
+                 [   0x00000000]
+                 [   0x30400000]
+                 -------------
+ 80  (0x8eb70708)  [b5|b4|   94]
+                 [   0x8412cb70]
+                 [   0x00000030]
+                 [   0x3400000c]
+                 -------------
+ 81  (0x8eb70718)  [00|b8|   95]
+                 [   0x8ec128d8]
+                 [   0x00000000]
+                 [   0x00400000]
+                 -------------
+ 82  (0x8eb70728)  [00|b8|   96]
+                 [   0x8ec12ab8]
+                 [   0x00000000]
+                 [   0x30400000]
+                 -------------
+ 83  (0x8eb70738)  [00|b8|   97]
+                 [   0x8ec12b58]
+                 [   0x00000000]
+                 [   0x30400000]
+                 -------------
+ 84  (0x8eb70748)  [00|00|   98]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 85  (0x8eb70758)  [b6|00|   99]
+                 [   0x00000000]
+                 [   0x00000014]
+                 [   0x00000001]
+                 -------------
+ 86  (0x8eb70768)  [b6|00|  100]
+                 [   0x00000000]
+                 [   0x8ebef9d0]
+                 [   0x80500001]
+                 -------------
+ 87  (0x8eb70778)  [b6|00|  101]
+                 [   0x00000000]
+                 [   0x0000000e]
+                 [   0x00000001]
+                 -------------
+ 88  (0x8eb70788)  [b6|00|  102]
+                 [   0x00000000]
+                 [   0x8ebeec60]
+                 [   0x80500001]
+                 -------------
+ 89  (0x8eb70798)  [b6|00|  103]
+                 [   0x00000000]
+                 [   0x00000006]
+                 [   0x80000001]
+                 -------------
+ 90  (0x8eb707a8)  [b5|b4|  104]
+                 [   0x8412cb70]
+                 [   0x00000044]
+                 [   0x34000017]
+                 -------------
+ 91  (0x8eb707b8)  [b5|b4|  105]
+                 [   0x8412cb70]
+                 [   0x00000040]
+                 [   0x34000016]
+                 -------------
+ 92  (0x8eb707c8)  [b6|00|  106]
+                 [   0x00000000]
+                 [   0x0000000c]
+                 [   0x80000001]
+                 -------------
+ 93  (0x8eb707d8)  [00|b9|  107]
+                 [   0x8eb5e950]
+                 [   0x00000004]
+                 [   0x80000001]
+                 -------------
+ 94  (0x8eb707e8)  [00|b8|  108]
+                 [   0x8ec10e98]
+                 [   0x00000000]
+                 [   0x80400001]
+                 -------------
+ 95  (0x8eb707f8)  [00|b8|  109]
+                 [   0x8ec101b8]
+                 [   0x00000000]
+                 [   0x80400001]
+                 -------------
+ 96  (0x8eb70808)  [00|00|  110]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 97  (0x8eb70818)  [00|00|  111]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 98  (0x8eb70828)  [00|00|  112]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+ 99  (0x8eb70838)  [00|00|  113]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+100  (0x8eb70848)  [00|00|  114]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+101  (0x8eb70858)  [00|00|  115]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+102  (0x8eb70868)  [b6|00|  116]
+                 [   0x00000000]
+                 [   0x0000000d]
+                 [   0x80000002]
+                 -------------
+103  (0x8eb70878)  [b6|00|  117]
+                 [   0x00000000]
+                 [   0x00000013]
+                 [   0x80000001]
+                 -------------
+104  (0x8eb70888)  [b5|b4|  118]
+                 [   0x84132340]
+                 [   0x00000008]
+                 [   0x34000001]
+                 -------------
+105  (0x8eb70898)  [00|00|  119]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+106  (0x8eb708a8)  [00|00|  121]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+107  (0x8eb708b8)  [00|b2|  122]
+                 [   0x84316f48]
+                 [   0x00000074]
+                 [   0x74400001]
+                 -------------
+108  (0x8eb708c8)  [00|00|  123]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+109  (0x8eb708d8)  [00|00|  125]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+110  (0x8eb708e8)  [00|00|  126]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+111  (0x8eb708f8)  [00|00|  127]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+112  (0x8eb70908)  [00|00|  128]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+113  (0x8eb70918)  [00|00|  129]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+114  (0x8eb70928)  [00|00|  130]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+115  (0x8eb70938)  [00|00|  133]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+116  (0x8eb70948)  [00|00|  134]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+117  (0x8eb70958)  [00|00|  136]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+118  (0x8eb70968)  [00|00|  137]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+119  (0x8eb70978)  [00|00|  138]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+120  (0x8eb70988)  [00|00|  139]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+121  (0x8eb70998)  [00|00|  141]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+122  (0x8eb709a8)  [00|00|  142]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+123  (0x8eb709b8)  [00|00|  144]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+124  (0x8eb709c8)  [00|00|  145]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+125  (0x8eb709d8)  [00|00|  146]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+126  (0x8eb709e8)  [00|00|  147]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+127  (0x8eb709f8)  [00|00|  149]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+128  (0x8eb70a08)  [00|00|  150]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+129  (0x8eb70a18)  [00|00|  151]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+130  (0x8eb70a28)  [00|00|  152]
+                 [   0x00000000]
+                 [   0x00000000]
+                 [   0x00000000]
+                 -------------
+EDX=0xaea8fd30 is an unknown value
+ESP=0xb29e4e2c is pointing into the stack for thread: 0xaea8fc00
+EBP=0xb29e4e58 is pointing into the stack for thread: 0xaea8fc00
+ESI=0xb29e4e40 is pointing into the stack for thread: 0xaea8fc00
+EDI=0xaea8fc00 is a thread
+
+
+Stack: [0xb2995000,0xb29e6000],  sp=0xb29e4e2c,  free space=319k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+[error occurred during error reporting (printing native stack), id 0x7]
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J  org.lwjgl.opengl.LinuxDisplay.nLockAWT()V
+J  org.lwjgl.opengl.Display.processMessages()V
+j  com.badlogic.gdx.backends.lwjgl.LwjglApplication.mainLoop()V+101
+j  com.badlogic.gdx.backends.lwjgl.LwjglApplication$1.run()V+27
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0xaea94000 JavaThread "process reaper" daemon [_thread_blocked, id=3941, stack(0xb297e000,0xb2995000)]
+  0xb6907400 JavaThread "DestroyJavaVM" [_thread_blocked, id=3922, stack(0xb6a9f000,0xb6af0000)]
+=>0xaea8fc00 JavaThread "LWJGL Application" [_thread_in_native, id=3939, stack(0xb2995000,0xb29e6000)]
+  0xb69eb000 JavaThread "AWT-XAWT" daemon [_thread_in_native, id=3935, stack(0xb3866000,0xb38b7000)]
+  0xb69dcc00 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=3934, stack(0xb38c9000,0xb391a000)]
+  0xb694bc00 JavaThread "Service Thread" daemon [_thread_blocked, id=3932, stack(0xb4413000,0xb4464000)]
+  0xb694a000 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=3931, stack(0xb3d91000,0xb3e12000)]
+  0xb6948400 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=3930, stack(0xb4464000,0xb44b5000)]
+  0xb6929c00 JavaThread "Finalizer" daemon [_thread_blocked, id=3929, stack(0xb463a000,0xb468b000)]
+  0xb6928400 JavaThread "Reference Handler" daemon [_thread_blocked, id=3928, stack(0xb468b000,0xb46dc000)]
+
+Other Threads:
+  0xb6926c00 VMThread [stack: 0xb46dc000,0xb475d000] [id=3927]
+  0xb694e400 WatcherThread [stack: 0xb3d10000,0xb3d91000] [id=3933]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 4928K, used 1210K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  20% used [0x7eb40000, 0x7ec27af0, 0x7ef90000)
+  from space 512K,  55% used [0x7ef90000, 0x7efd6e10, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 4537K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  41% used [0x84090000, 0x844fe560, 0x844fe600, 0x84b40000)
+ compacting perm gen  total 12288K, used 2315K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed82c60, 0x8ed82e00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+
+Card table byte_map: [0xb47d4000,0xb4880000] byte_map_base: 0xb43de600
+
+Polling page: 0xb76ed000
+
+Code Cache  [0xb4900000, 0xb4ac8000, 0xb6900000)
+ total_blobs=892 nmethods=597 adapters=232 free_code_cache=30964Kb largest_free_block=31707200
+
+Compilation events (10 events):
+Event: 48,232 Thread 0xb694a000  593   !         javazoom.jl.decoder.Bitstream::isSyncCurrentPosition (133 bytes)
+Event: 48,232 Thread 0xb694a000 nmethod 593 0xb4ac0848 code [0xb4ac0970, 0xb4ac0b94]
+Event: 48,232 Thread 0xb694a000  594             javazoom.jl.decoder.MP3Decoder::decodeFrame (38 bytes)
+Event: 48,232 Thread 0xb694a000 nmethod 594 0xb4ac0d88 code [0xb4ac0ea0, 0xb4ac0fa4]
+Event: 48,232 Thread 0xb694a000  595             javazoom.jl.decoder.MP3Decoder::retrieveDecoder (186 bytes)
+Event: 48,233 Thread 0xb694a000 nmethod 595 0xb4ac1088 code [0xb4ac1200, 0xb4ac15c8]
+Event: 48,233 Thread 0xb694a000  596             javazoom.jl.decoder.LayerIIIDecoder::decodeFrame (5 bytes)
+Event: 48,233 Thread 0xb694a000 nmethod 596 0xb4ac1848 code [0xb4ac1940, 0xb4ac19cc]
+Event: 48,801 Thread 0xb694a000  597   !         com.badlogic.gdx.backends.openal.Mp3$Music::read (213 bytes)
+Event: 48,803 Thread 0xb694a000 nmethod 597 0xb4ac1a48 code [0xb4ac1c80, 0xb4ac2510]
+
+GC Heap History (10 events):
+Event: 28,992 GC heap before
+{Heap before GC invocations=7 (full 0):
+ def new generation   total 4928K, used 4634K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  98% used [0x7eb40000, 0x7ef7f370, 0x7ef90000)
+  from space 512K,  55% used [0x7f010000, 0x7f057660, 0x7f090000)
+  to   space 512K,   0% used [0x7ef90000, 0x7ef90000, 0x7f010000)
+ tenured generation   total 10944K, used 3335K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  30% used [0x84090000, 0x843d1da8, 0x843d1e00, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818d8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+Event: 28,994 GC heap after
+Heap after GC invocations=8 (full 0):
+ def new generation   total 4928K, used 282K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,   0% used [0x7eb40000, 0x7eb40000, 0x7ef90000)
+  from space 512K,  55% used [0x7ef90000, 0x7efd69c8, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 3598K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  32% used [0x84090000, 0x84413880, 0x84413a00, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818d8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+}
+Event: 33,729 GC heap before
+{Heap before GC invocations=8 (full 0):
+ def new generation   total 4928K, used 4693K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  99% used [0x7eb40000, 0x7ef8ebf8, 0x7ef90000)
+  from space 512K,  55% used [0x7ef90000, 0x7efd69c8, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 3598K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  32% used [0x84090000, 0x84413880, 0x84413a00, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818d8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+Event: 33,731 GC heap after
+Heap after GC invocations=9 (full 0):
+ def new generation   total 4928K, used 449K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,   0% used [0x7eb40000, 0x7eb40000, 0x7ef90000)
+  from space 512K,  87% used [0x7f010000, 0x7f080410, 0x7f090000)
+  to   space 512K,   0% used [0x7ef90000, 0x7ef90000, 0x7f010000)
+ tenured generation   total 10944K, used 3648K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  33% used [0x84090000, 0x844200e8, 0x84420200, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818d8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+}
+Event: 36,087 GC heap before
+{Heap before GC invocations=9 (full 0):
+ def new generation   total 4928K, used 4745K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  97% used [0x7eb40000, 0x7ef72078, 0x7ef90000)
+  from space 512K,  87% used [0x7f010000, 0x7f080410, 0x7f090000)
+  to   space 512K,   0% used [0x7ef90000, 0x7ef90000, 0x7f010000)
+ tenured generation   total 10944K, used 3648K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  33% used [0x84090000, 0x844200e8, 0x84420200, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+Event: 36,089 GC heap after
+Heap after GC invocations=10 (full 0):
+ def new generation   total 4928K, used 445K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,   0% used [0x7eb40000, 0x7eb40000, 0x7ef90000)
+  from space 512K,  87% used [0x7ef90000, 0x7efff728, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 3857K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  35% used [0x84090000, 0x84454790, 0x84454800, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+}
+Event: 38,527 GC heap before
+{Heap before GC invocations=10 (full 0):
+ def new generation   total 4928K, used 4763K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  97% used [0x7eb40000, 0x7ef77860, 0x7ef90000)
+  from space 512K,  87% used [0x7ef90000, 0x7efff728, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 3857K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  35% used [0x84090000, 0x84454790, 0x84454800, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+Event: 38,529 GC heap after
+Heap after GC invocations=11 (full 0):
+ def new generation   total 4928K, used 283K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,   0% used [0x7eb40000, 0x7eb40000, 0x7ef90000)
+  from space 512K,  55% used [0x7f010000, 0x7f056df0, 0x7f090000)
+  to   space 512K,   0% used [0x7ef90000, 0x7ef90000, 0x7f010000)
+ tenured generation   total 10944K, used 4275K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  39% used [0x84090000, 0x844bce28, 0x844bd000, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+}
+Event: 41,173 GC heap before
+{Heap before GC invocations=11 (full 0):
+ def new generation   total 4928K, used 4609K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,  97% used [0x7eb40000, 0x7ef799c0, 0x7ef90000)
+  from space 512K,  55% used [0x7f010000, 0x7f056df0, 0x7f090000)
+  to   space 512K,   0% used [0x7ef90000, 0x7ef90000, 0x7f010000)
+ tenured generation   total 10944K, used 4275K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  39% used [0x84090000, 0x844bce28, 0x844bd000, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+Event: 41,175 GC heap after
+Heap after GC invocations=12 (full 0):
+ def new generation   total 4928K, used 283K [0x7eb40000, 0x7f090000, 0x84090000)
+  eden space 4416K,   0% used [0x7eb40000, 0x7eb40000, 0x7ef90000)
+  from space 512K,  55% used [0x7ef90000, 0x7efd6e10, 0x7f010000)
+  to   space 512K,   0% used [0x7f010000, 0x7f010000, 0x7f090000)
+ tenured generation   total 10944K, used 4537K [0x84090000, 0x84b40000, 0x8eb40000)
+   the space 10944K,  41% used [0x84090000, 0x844fe560, 0x844fe600, 0x84b40000)
+ compacting perm gen  total 12288K, used 2310K [0x8eb40000, 0x8f740000, 0x92b40000)
+   the space 12288K,  18% used [0x8eb40000, 0x8ed818e8, 0x8ed81a00, 0x8f740000)
+    ro space 10240K,  45% used [0x92b40000, 0x92fc88f8, 0x92fc8a00, 0x93540000)
+    rw space 12288K,  57% used [0x93540000, 0x93c1b998, 0x93c1ba00, 0x94140000)
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1,758 Thread 0xaea8fc00 Threw 0x7ec775b0 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 1,783 Thread 0xaea8fc00 Threw 0x7ecb48a0 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 1,789 Thread 0xaea8fc00 Threw 0x7ecd7448 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 1,790 Thread 0xaea8fc00 Threw 0x7ed07640 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 1,810 Thread 0xaea8fc00 Threw 0x7eef2c58 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 1,816 Thread 0xaea8fc00 Threw 0x7eb82868 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 2,543 Thread 0xaea8fc00 Threw 0x7eb8c3b0 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 2,545 Thread 0xaea8fc00 Threw 0x7eb99790 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 43,324 Thread 0xaea8fc00 Threw 0x7eb97ff0 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+Event: 43,325 Thread 0xaea8fc00 Threw 0x7eb9c470 at /HUDSON/workspace/7u-2-build-linux-i586/jdk7u51/527/hotspot/src/share/vm/prims/jvm.cpp:1244
+
+Events (10 events):
+Event: 38,527 Executing VM operation: GenCollectForAllocation
+Event: 38,529 Executing VM operation: GenCollectForAllocation done
+Event: 41,173 Executing VM operation: GenCollectForAllocation
+Event: 41,175 Executing VM operation: GenCollectForAllocation done
+Event: 43,324 loading class 0xb697af10
+Event: 43,324 loading class 0xb697af10 done
+Event: 43,325 loading class 0xb697afd0
+Event: 43,325 loading class 0xb697afd0 done
+Event: 43,325 loading class 0x94161780
+Event: 43,325 loading class 0x94161780 done
+
+
+Dynamic libraries:
+08048000-08049000 r-xp 00000000 08:01 319959     /opt/java/32/jre1.7.0_51/bin/java
+08049000-0804a000 rw-p 00000000 08:01 319959     /opt/java/32/jre1.7.0_51/bin/java
+08995000-089f7000 rw-p 00000000 00:00 0          [heap]
+7eb40000-7f090000 rw-p 00000000 00:00 0 
+7f090000-84090000 rw-p 00000000 00:00 0 
+84090000-84b40000 rw-p 00000000 00:00 0 
+84b40000-8eb40000 rw-p 00000000 00:00 0 
+8eb40000-8f740000 rw-p 00000000 00:00 0 
+8f740000-92b40000 rw-p 00000000 00:00 0 
+92b40000-92fc9000 r--p 00001000 08:01 320027     /opt/java/32/jre1.7.0_51/lib/i386/client/classes.jsa
+92fc9000-93540000 rw-p 00000000 00:00 0 
+93540000-93c1c000 rw-p 0048a000 08:01 320027     /opt/java/32/jre1.7.0_51/lib/i386/client/classes.jsa
+93c1c000-94140000 rw-p 00000000 00:00 0 
+94140000-943df000 rw-p 00b66000 08:01 320027     /opt/java/32/jre1.7.0_51/lib/i386/client/classes.jsa
+943df000-94540000 rw-p 00000000 00:00 0 
+94540000-94549000 r-xp 00e05000 08:01 320027     /opt/java/32/jre1.7.0_51/lib/i386/client/classes.jsa
+94549000-94940000 rw-p 00000000 00:00 0 
+abffc000-ac2fc000 rw-s 17d42000 00:05 7993       /dev/dri/card0
+ac3c0000-ac420000 rw-s 182aa000 00:05 7993       /dev/dri/card0
+ac420000-ac480000 rw-s 1824a000 00:05 7993       /dev/dri/card0
+ac480000-ac4e0000 rw-s 181ea000 00:05 7993       /dev/dri/card0
+ac4e0000-ac540000 rw-s 1818a000 00:05 7993       /dev/dri/card0
+ac540000-ac5a0000 rw-s 1812a000 00:05 7993       /dev/dri/card0
+ac5a0000-ac600000 rw-s 180ca000 00:05 7993       /dev/dri/card0
+ac600000-ac6e6000 rw-p 00000000 00:00 0 
+ac6e6000-ac700000 ---p 00000000 00:00 0 
+ac70b000-ac77b000 rw-s 18042000 00:05 7993       /dev/dri/card0
+ac77b000-aca7b000 rw-s 1777a000 00:05 7993       /dev/dri/card0
+acabe000-acb1e000 rw-s 17ce2000 00:05 7993       /dev/dri/card0
+acb1e000-acb7e000 rw-s 17c82000 00:05 7993       /dev/dri/card0
+acb7e000-acbde000 rw-s 17c22000 00:05 7993       /dev/dri/card0
+acbde000-acc3e000 rw-s 17bc2000 00:05 7993       /dev/dri/card0
+acc3e000-acc9e000 rw-s 17b62000 00:05 7993       /dev/dri/card0
+acc9e000-accfe000 rw-s 17b02000 00:05 7993       /dev/dri/card0
+accfe000-acffe000 rw-s 171b2000 00:05 7993       /dev/dri/card0
+ad010000-ad080000 rw-s 17a7a000 00:05 7993       /dev/dri/card0
+ad080000-ad0e0000 rw-s 1771a000 00:05 7993       /dev/dri/card0
+ad0e0000-ad140000 rw-s 176ba000 00:05 7993       /dev/dri/card0
+ad140000-ad1a0000 rw-s 1765a000 00:05 7993       /dev/dri/card0
+ad1a0000-ad200000 rw-s 175fa000 00:05 7993       /dev/dri/card0
+ad200000-ad2fc000 rw-p 00000000 00:00 0 
+ad2fc000-ad300000 ---p 00000000 00:00 0 
+ad33c000-ad39c000 rw-s 1759a000 00:05 7993       /dev/dri/card0
+ad39c000-ad3fc000 rw-s 1753a000 00:05 7993       /dev/dri/card0
+ad3fc000-ad6fc000 rw-s 16bea000 00:05 7993       /dev/dri/card0
+ad750000-ad7c0000 rw-s 174b2000 00:05 7993       /dev/dri/card0
+ad7c0000-ad820000 rw-s 17152000 00:05 7993       /dev/dri/card0
+ad820000-ad880000 rw-s 170f2000 00:05 7993       /dev/dri/card0
+ad880000-ad8e0000 rw-s 17092000 00:05 7993       /dev/dri/card0
+ad8e0000-ad940000 rw-s 17032000 00:05 7993       /dev/dri/card0
+ad940000-ad9a0000 rw-s 16fd2000 00:05 7993       /dev/dri/card0
+ad9a0000-ada00000 rw-s 16f72000 00:05 7993       /dev/dri/card0
+ada00000-adaf8000 rw-p 00000000 00:00 0 
+adaf8000-adb00000 ---p 00000000 00:00 0 
+adb0d000-adb7d000 rw-s 16eea000 00:05 7993       /dev/dri/card0
+adb7d000-ade7d000 rw-s 16622000 00:05 7993       /dev/dri/card0
+ade9f000-adeff000 rw-s 16b8a000 00:05 7993       /dev/dri/card0
+adeff000-adf5f000 rw-s 16b2a000 00:05 7993       /dev/dri/card0
+adf5f000-adfbf000 rw-s 16aca000 00:05 7993       /dev/dri/card0
+adfbf000-ae01f000 rw-s 16a6a000 00:05 7993       /dev/dri/card0
+ae01f000-ae07f000 rw-s 16a0a000 00:05 7993       /dev/dri/card0
+ae07f000-ae37f000 rw-s 1605a000 00:05 7993       /dev/dri/card0
+ae3d0000-ae430000 rw-s 169aa000 00:05 7993       /dev/dri/card0
+ae430000-ae4a0000 rw-s 16922000 00:05 7993       /dev/dri/card0
+ae4a0000-ae500000 rw-s 165c2000 00:05 7993       /dev/dri/card0
+ae500000-ae5fe000 rw-p 00000000 00:00 0 
+ae5fe000-ae600000 ---p 00000000 00:00 0 
+ae640000-ae6a0000 rw-s 16562000 00:05 7993       /dev/dri/card0
+ae6a0000-ae700000 rw-s 16502000 00:05 7993       /dev/dri/card0
+ae700000-aea00000 rw-s 15a92000 00:05 7993       /dev/dri/card0
+aea00000-aeaf5000 rw-p 00000000 00:00 0 
+aeaf5000-aeb00000 ---p 00000000 00:00 0 
+aeb30000-aeb90000 rw-s 164a2000 00:05 7993       /dev/dri/card0
+aeb90000-aebf0000 rw-s 16442000 00:05 7993       /dev/dri/card0
+aebf0000-aec50000 rw-s 163e2000 00:05 7993       /dev/dri/card0
+aec50000-aecc0000 rw-s 1635a000 00:05 7993       /dev/dri/card0
+aecc0000-aed20000 rw-s 15ffa000 00:05 7993       /dev/dri/card0
+aed20000-aed80000 rw-s 15f9a000 00:05 7993       /dev/dri/card0
+aed80000-aede0000 rw-s 15f3a000 00:05 7993       /dev/dri/card0
+aede0000-aee40000 rw-s 15eda000 00:05 7993       /dev/dri/card0
+aee40000-aeea0000 rw-s 15e7a000 00:05 7993       /dev/dri/card0
+aeea0000-aef00000 rw-s 15e1a000 00:05 7993       /dev/dri/card0
+aef00000-aeff6000 rw-p 00000000 00:00 0 
+aeff6000-af000000 ---p 00000000 00:00 0 
+af00b000-af07b000 rw-s 15d92000 00:05 7993       /dev/dri/card0
+af07b000-af37b000 rw-s 154ca000 00:05 7993       /dev/dri/card0
+af3be000-af41e000 rw-s 15a32000 00:05 7993       /dev/dri/card0
+af41e000-af47e000 rw-s 159d2000 00:05 7993       /dev/dri/card0
+af47e000-af4de000 rw-s 15972000 00:05 7993       /dev/dri/card0
+af4de000-af53e000 rw-s 15912000 00:05 7993       /dev/dri/card0
+af53e000-af59e000 rw-s 158b2000 00:05 7993       /dev/dri/card0
+af59e000-af5fe000 rw-s 15852000 00:05 7993       /dev/dri/card0
+af5fe000-af8fe000 rw-s 14f02000 00:05 7993       /dev/dri/card0
+af910000-af980000 rw-s 157ca000 00:05 7993       /dev/dri/card0
+af980000-af9e0000 rw-s 1546a000 00:05 7993       /dev/dri/card0
+af9e0000-afa40000 rw-s 1540a000 00:05 7993       /dev/dri/card0
+afa40000-afaa0000 rw-s 153aa000 00:05 7993       /dev/dri/card0
+afaa0000-afb00000 rw-s 1534a000 00:05 7993       /dev/dri/card0
+afb00000-afbfe000 rw-p 00000000 00:00 0 
+afbfe000-afc00000 ---p 00000000 00:00 0 
+afc3c000-afc9c000 rw-s 152ea000 00:05 7993       /dev/dri/card0
+afc9c000-afcfc000 rw-s 1528a000 00:05 7993       /dev/dri/card0
+afcfc000-afffc000 rw-s 1493a000 00:05 7993       /dev/dri/card0
+b0050000-b00c0000 rw-s 15202000 00:05 7993       /dev/dri/card0
+b00c0000-b0120000 rw-s 14ea2000 00:05 7993       /dev/dri/card0
+b0120000-b0180000 rw-s 14e42000 00:05 7993       /dev/dri/card0
+b0180000-b01e0000 rw-s 14de2000 00:05 7993       /dev/dri/card0
+b01e0000-b0240000 rw-s 14d82000 00:05 7993       /dev/dri/card0
+b0240000-b02a0000 rw-s 14d22000 00:05 7993       /dev/dri/card0
+b02a0000-b0300000 rw-s 14cc2000 00:05 7993       /dev/dri/card0
+b0300000-b03d6000 rw-p 00000000 00:00 0 
+b03d6000-b0400000 ---p 00000000 00:00 0 
+b040d000-b047d000 rw-s 14c3a000 00:05 7993       /dev/dri/card0
+b047d000-b077d000 rw-s 14372000 00:05 7993       /dev/dri/card0
+b07c0000-b0820000 rw-s 148da000 00:05 7993       /dev/dri/card0
+b0820000-b0880000 rw-s 1487a000 00:05 7993       /dev/dri/card0
+b0880000-b08e0000 rw-s 1481a000 00:05 7993       /dev/dri/card0
+b08e0000-b0940000 rw-s 147ba000 00:05 7993       /dev/dri/card0
+b0940000-b09a0000 rw-s 1475a000 00:05 7993       /dev/dri/card0
+b09a0000-b0a00000 rw-s 146fa000 00:05 7993       /dev/dri/card0
+b0a00000-b0afe000 rw-p 00000000 00:00 0 
+b0afe000-b0b00000 ---p 00000000 00:00 0 
+b0b00000-b0c00000 rw-p 00000000 00:00 0 
+b0c00000-b0cfd000 rw-p 00000000 00:00 0 
+b0cfd000-b0d00000 ---p 00000000 00:00 0 
+b0d00000-b0e00000 rw-p 00000000 00:00 0 
+b0e00000-b0f00000 rw-p 00000000 00:00 0 
+b0f1b000-b0f27000 rw-s 180be000 00:05 7993       /dev/dri/card0
+b0f27000-b0f2a000 rw-s 00000000 00:04 79271      /drm mm object (deleted)
+b0f2a000-b0f36000 rw-s 180b2000 00:05 7993       /dev/dri/card0
+b0f36000-b0f37000 rw-s 00000000 00:04 79269      /drm mm object (deleted)
+b0f37000-b0f38000 rw-s 00000000 00:04 79268      /drm mm object (deleted)
+b0f38000-b0f39000 rw-s 00000000 00:04 78168      /drm mm object (deleted)
+b0f39000-b0f45000 rw-s 17af6000 00:05 7993       /dev/dri/card0
+b0f45000-b0f48000 rw-s 00000000 00:04 78160      /drm mm object (deleted)
+b0f48000-b0f54000 rw-s 17aea000 00:05 7993       /dev/dri/card0
+b0f54000-b0f55000 rw-s 00000000 00:04 78158      /drm mm object (deleted)
+b0f55000-b0fc5000 rw-s 14672000 00:05 7993       /dev/dri/card0
+b0fc5000-b1200000 rw-p 00000000 00:00 0 
+b1200000-b1300000 rw-p 00000000 00:00 0 
+b1300000-b1301000 rw-s 00000000 00:04 78157      /drm mm object (deleted)
+b1301000-b1302000 rw-s 00000000 00:04 79235      /drm mm object (deleted)
+b1302000-b130e000 rw-s 1752e000 00:05 7993       /dev/dri/card0
+b130e000-b1311000 rw-s 00000000 00:04 78141      /drm mm object (deleted)
+b1311000-b131d000 rw-s 17522000 00:05 7993       /dev/dri/card0
+b131d000-b131e000 rw-s 00000000 00:04 78139      /drm mm object (deleted)
+b131e000-b131f000 rw-s 00000000 00:04 78138      /drm mm object (deleted)
+b131f000-b1320000 rw-s 00000000 00:04 79251      /drm mm object (deleted)
+b1320000-b132c000 rw-s 16f66000 00:05 7993       /dev/dri/card0
+b132c000-b132f000 rw-s 00000000 00:04 79243      /drm mm object (deleted)
+b132f000-b133b000 rw-s 16f5a000 00:05 7993       /dev/dri/card0
+b133b000-b139b000 rw-s 14312000 00:05 7993       /dev/dri/card0
+b139b000-b13fb000 rw-s 142b2000 00:05 7993       /dev/dri/card0
+b13fb000-b2100000 rw-p 00000000 00:00 0 
+b2100000-b2200000 rw-p 00000000 00:00 0 
+b2200000-b2201000 rw-s 00000000 00:04 79241      /drm mm object (deleted)
+b2201000-b2202000 rw-s 00000000 00:04 79240      /drm mm object (deleted)
+b2202000-b2203000 rw-s 00000000 00:04 78131      /drm mm object (deleted)
+b2203000-b220f000 rw-s 1699e000 00:05 7993       /dev/dri/card0
+b220f000-b2212000 rw-s 00000000 00:04 78123      /drm mm object (deleted)
+b2212000-b221e000 rw-s 16992000 00:05 7993       /dev/dri/card0
+b221e000-b222a000 rw-s 163d6000 00:05 7993       /dev/dri/card0
+b222a000-b222d000 rw-s 00000000 00:04 78109      /drm mm object (deleted)
+b222d000-b2239000 rw-s 163ca000 00:05 7993       /dev/dri/card0
+b2239000-b2245000 rw-s 15e0e000 00:05 7993       /dev/dri/card0
+b2245000-b22a5000 rw-s 14252000 00:05 7993       /dev/dri/card0
+b22a5000-b22a6000 rw-s 00000000 00:04 78121      /drm mm object (deleted)
+b22a6000-b22a7000 rw-s 00000000 00:04 78120      /drm mm object (deleted)
+b22a7000-b22a8000 rw-s 00000000 00:04 78107      /drm mm object (deleted)
+b22a8000-b22a9000 rw-s 00000000 00:04 78101      /drm mm object (deleted)
+b22ab000-b22ad000 rw-s 00000000 00:04 79265      /drm mm object (deleted)
+b22ad000-b22b0000 rw-s 00000000 00:04 78093      /drm mm object (deleted)
+b22b0000-b22bc000 rw-s 15e02000 00:05 7993       /dev/dri/card0
+b22bc000-b22bd000 rw-s 00000000 00:04 78091      /drm mm object (deleted)
+b22bd000-b22be000 rw-s 00000000 00:04 79226      /drm mm object (deleted)
+b22be000-b22ca000 rw-s 15846000 00:05 7993       /dev/dri/card0
+b22ca000-b22cd000 rw-s 00000000 00:04 79218      /drm mm object (deleted)
+b22cd000-b22d9000 rw-s 1583a000 00:05 7993       /dev/dri/card0
+b22d9000-b22da000 rw-s 00000000 00:04 79216      /drm mm object (deleted)
+b22da000-b22e6000 rw-s 1527e000 00:05 7993       /dev/dri/card0
+b22e6000-b233d000 rw-p 00000000 00:00 0 
+b233d000-b233e000 rw-s 00000000 00:04 79215      /drm mm object (deleted)
+b233e000-b233f000 rw-s 00000000 00:04 78086      /drm mm object (deleted)
+b233f000-b2342000 rw-s 00000000 00:04 79203      /drm mm object (deleted)
+b2342000-b234e000 rw-s 15272000 00:05 7993       /dev/dri/card0
+b234e000-b235a000 rw-s 14cb6000 00:05 7993       /dev/dri/card0
+b235a000-b2366000 rw-s 14caa000 00:05 7993       /dev/dri/card0
+b2366000-b2372000 rw-s 146ee000 00:05 7993       /dev/dri/card0
+b2372000-b23d1000 rw-p 00000000 00:00 0 
+b23d1000-b23e8000 r-xp 00000000 08:01 953        /lib/i386-linux-gnu/libz.so.1.2.7
+b23e8000-b23e9000 r--p 00016000 08:01 953        /lib/i386-linux-gnu/libz.so.1.2.7
+b23e9000-b23ea000 rw-p 00017000 08:01 953        /lib/i386-linux-gnu/libz.so.1.2.7
+b23ea000-b23f3000 r-xp 00000000 08:01 394360     /usr/lib/i386-linux-gnu/libpciaccess.so.0.11.1
+b23f3000-b23f4000 r--p 00008000 08:01 394360     /usr/lib/i386-linux-gnu/libpciaccess.so.0.11.1
+b23f4000-b23f5000 rw-p 00009000 08:01 394360     /usr/lib/i386-linux-gnu/libpciaccess.so.0.11.1
+b23f5000-b2416000 r-xp 00000000 08:01 444471     /usr/lib/i386-linux-gnu/libdrm_intel.so.1.0.0
+b2416000-b2417000 r--p 00020000 08:01 444471     /usr/lib/i386-linux-gnu/libdrm_intel.so.1.0.0
+b2417000-b2418000 rw-p 00021000 08:01 444471     /usr/lib/i386-linux-gnu/libdrm_intel.so.1.0.0
+b2418000-b243d000 r-xp 00000000 08:01 824        /lib/i386-linux-gnu/libexpat.so.1.6.0
+b243d000-b243f000 r--p 00025000 08:01 824        /lib/i386-linux-gnu/libexpat.so.1.6.0
+b243f000-b2440000 rw-p 00027000 08:01 824        /lib/i386-linux-gnu/libexpat.so.1.6.0
+b2440000-b27d7000 r-xp 00000000 08:01 444534     /usr/lib/i386-linux-gnu/libdricore9.1.7.so.1.0.0
+b27d7000-b27d8000 ---p 00397000 08:01 444534     /usr/lib/i386-linux-gnu/libdricore9.1.7.so.1.0.0
+b27d8000-b27e1000 r--p 00397000 08:01 444534     /usr/lib/i386-linux-gnu/libdricore9.1.7.so.1.0.0
+b27e1000-b27e6000 rw-p 003a0000 08:01 444534     /usr/lib/i386-linux-gnu/libdricore9.1.7.so.1.0.0
+b27e6000-b27fb000 rw-p 00000000 00:00 0 
+b27fb000-b28cf000 r-xp 00000000 08:01 444531     /usr/lib/i386-linux-gnu/dri/i965_dri.so
+b28cf000-b28d1000 r--p 000d4000 08:01 444531     /usr/lib/i386-linux-gnu/dri/i965_dri.so
+b28d1000-b28d2000 rw-p 000d6000 08:01 444531     /usr/lib/i386-linux-gnu/dri/i965_dri.so
+b28d2000-b28d3000 rw-p 00000000 00:00 0 
+b28d3000-b28de000 r-xp 00000000 08:01 444459     /usr/lib/i386-linux-gnu/libdrm.so.2.4.0
+b28de000-b28df000 r--p 0000a000 08:01 444459     /usr/lib/i386-linux-gnu/libdrm.so.2.4.0
+b28df000-b28e0000 rw-p 0000b000 08:01 444459     /usr/lib/i386-linux-gnu/libdrm.so.2.4.0
+b28e0000-b28f6000 r-xp 00000000 08:01 394023     /usr/lib/i386-linux-gnu/libxcb-glx.so.0.0.0
+b28f6000-b28f7000 r--p 00016000 08:01 394023     /usr/lib/i386-linux-gnu/libxcb-glx.so.0.0.0
+b28f7000-b28f8000 rw-p 00017000 08:01 394023     /usr/lib/i386-linux-gnu/libxcb-glx.so.0.0.0
+b28f8000-b2907000 r-xp 00000000 08:01 394275     /usr/lib/i386-linux-gnu/libglapi.so.0.0.0
+b2907000-b2908000 ---p 0000f000 08:01 394275     /usr/lib/i386-linux-gnu/libglapi.so.0.0.0
+b2908000-b290a000 r--p 0000f000 08:01 394275     /usr/lib/i386-linux-gnu/libglapi.so.0.0.0
+b290a000-b290f000 rwxp 00011000 08:01 394275     /usr/lib/i386-linux-gnu/libglapi.so.0.0.0
+b290f000-b2961000 r-xp 00000000 08:01 420141     /usr/lib/i386-linux-gnu/mesa/libGL.so.1.2.0
+b2961000-b2963000 r--p 00051000 08:01 420141     /usr/lib/i386-linux-gnu/mesa/libGL.so.1.2.0
+b2963000-b2967000 rwxp 00053000 08:01 420141     /usr/lib/i386-linux-gnu/mesa/libGL.so.1.2.0
+b2967000-b2968000 rwxp 00000000 00:00 0 
+b2968000-b2969000 rw-s 00000000 00:04 79201      /drm mm object (deleted)
+b2969000-b296a000 rw-s 00000000 00:04 79200      /drm mm object (deleted)
+b296a000-b296b000 rw-s 00000000 00:04 79186      /drm mm object (deleted)
+b296b000-b296e000 rw-s 00000000 00:04 79178      /drm mm object (deleted)
+b296e000-b296f000 rw-s 00000000 00:04 79176      /drm mm object (deleted)
+b296f000-b2972000 rw-s 00000000 00:04 78063      /drm mm object (deleted)
+b2972000-b297e000 rw-s 146e2000 00:05 7993       /dev/dri/card0
+b297e000-b2981000 ---p 00000000 00:00 0 
+b2981000-b2995000 rw-p 00000000 00:00 0          [stack:3941]
+b2995000-b2998000 ---p 00000000 00:00 0 
+b2998000-b29e6000 rw-p 00000000 00:00 0          [stack:3939]
+b29e6000-b29e7000 ---p 00000000 00:00 0 
+b29e7000-b2ae7000 rw-p 00000000 00:00 0          [stack:3938]
+b2ae7000-b2af7000 rw-s 00000000 00:04 23396366   /SYSV0056a4d6 (deleted)
+b2af7000-b2be4000 r-xp 00000000 08:01 420134     /usr/lib/i386-linux-gnu/libasound.so.2.0.0
+b2be4000-b2be8000 r--p 000ec000 08:01 420134     /usr/lib/i386-linux-gnu/libasound.so.2.0.0
+b2be8000-b2be9000 rw-p 000f0000 08:01 420134     /usr/lib/i386-linux-gnu/libasound.so.2.0.0
+b2be9000-b2bea000 rw-s 00000000 00:04 79175      /drm mm object (deleted)
+b2bea000-b2beb000 rw-s 00000000 00:04 78071      /drm mm object (deleted)
+b2beb000-b2bec000 rw-s 00000000 00:04 78061      /drm mm object (deleted)
+b2bec000-b2bed000 rw-s 00000000 00:04 78060      /drm mm object (deleted)
+b2bed000-b2bee000 rw-s 00000000 00:04 79170      /drm mm object (deleted)
+b2bee000-b2bef000 rw-s 00000000 00:04 78050      /drm mm object (deleted)
+b2bef000-b2bff000 rw-s 00000000 00:05 8372       /dev/snd/pcmC0D0p
+b2bff000-b2c00000 ---p 00000000 00:00 0 
+b2c00000-b3400000 rw-p 00000000 00:00 0 
+b3400000-b3413000 r-xp 00000000 08:01 19212      /lib/i386-linux-gnu/libresolv-2.17.so
+b3413000-b3414000 r--p 00013000 08:01 19212      /lib/i386-linux-gnu/libresolv-2.17.so
+b3414000-b3415000 rw-p 00014000 08:01 19212      /lib/i386-linux-gnu/libresolv-2.17.so
+b3415000-b3417000 rw-p 00000000 00:00 0 
+b3417000-b341d000 r-xp 00000000 08:01 394330     /usr/lib/i386-linux-gnu/libogg.so.0.8.0
+b341d000-b341e000 r--p 00005000 08:01 394330     /usr/lib/i386-linux-gnu/libogg.so.0.8.0
+b341e000-b341f000 rw-p 00006000 08:01 394330     /usr/lib/i386-linux-gnu/libogg.so.0.8.0
+b341f000-b3448000 r-xp 00000000 08:01 394510     /usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+b3448000-b3449000 ---p 00029000 08:01 394510     /usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+b3449000-b344a000 r--p 00029000 08:01 394510     /usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+b344a000-b344b000 rw-p 0002a000 08:01 394510     /usr/lib/i386-linux-gnu/libvorbis.so.0.4.5
+b344b000-b35b1000 r-xp 00000000 08:01 394512     /usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+b35b1000-b35c2000 r--p 00165000 08:01 394512     /usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+b35c2000-b35c3000 rw-p 00176000 08:01 394512     /usr/lib/i386-linux-gnu/libvorbisenc.so.2.0.8
+b35c3000-b3611000 r-xp 00000000 08:01 393781     /usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+b3611000-b3612000 r--p 0004e000 08:01 393781     /usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+b3612000-b3613000 rw-p 0004f000 08:01 393781     /usr/lib/i386-linux-gnu/libFLAC.so.8.2.0
+b3613000-b3618000 r-xp 00000000 08:01 393870     /usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+b3618000-b3619000 r--p 00004000 08:01 393870     /usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+b3619000-b361a000 rw-p 00005000 08:01 393870     /usr/lib/i386-linux-gnu/libasyncns.so.0.3.1
+b361a000-b3687000 r-xp 00000000 08:01 394438     /usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+b3687000-b3689000 r--p 0006c000 08:01 394438     /usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+b3689000-b368a000 rw-p 0006e000 08:01 394438     /usr/lib/i386-linux-gnu/libsndfile.so.1.0.25
+b368a000-b368e000 rw-p 00000000 00:00 0 
+b368e000-b3696000 r-xp 00000000 08:01 951        /lib/i386-linux-gnu/libwrap.so.0.7.6
+b3696000-b3697000 r--p 00007000 08:01 951        /lib/i386-linux-gnu/libwrap.so.0.7.6
+b3697000-b3698000 rw-p 00008000 08:01 951        /lib/i386-linux-gnu/libwrap.so.0.7.6
+b3698000-b36e0000 r-xp 00000000 08:01 17735      /lib/i386-linux-gnu/libdbus-1.so.3.7.2
+b36e0000-b36e1000 r--p 00047000 08:01 17735      /lib/i386-linux-gnu/libdbus-1.so.3.7.2
+b36e1000-b36e2000 rw-p 00048000 08:01 17735      /lib/i386-linux-gnu/libdbus-1.so.3.7.2
+b36e2000-b374b000 r-xp 00000000 08:01 395400     /usr/lib/i386-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+b374b000-b374c000 r--p 00068000 08:01 395400     /usr/lib/i386-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+b374c000-b374d000 rw-p 00069000 08:01 395400     /usr/lib/i386-linux-gnu/pulseaudio/libpulsecommon-3.0.so
+b374d000-b3755000 r-xp 00000000 08:01 844        /lib/i386-linux-gnu/libjson.so.0.1.0
+b3755000-b3756000 r--p 00007000 08:01 844        /lib/i386-linux-gnu/libjson.so.0.1.0
+b3756000-b3757000 rw-p 00008000 08:01 844        /lib/i386-linux-gnu/libjson.so.0.1.0
+b3757000-b37a3000 r-xp 00000000 08:01 394394     /usr/lib/i386-linux-gnu/libpulse.so.0.15.3
+b37a3000-b37a4000 ---p 0004c000 08:01 394394     /usr/lib/i386-linux-gnu/libpulse.so.0.15.3
+b37a4000-b37a5000 r--p 0004c000 08:01 394394     /usr/lib/i386-linux-gnu/libpulse.so.0.15.3
+b37a5000-b37a6000 rw-p 0004d000 08:01 394394     /usr/lib/i386-linux-gnu/libpulse.so.0.15.3
+b37a6000-b37f4000 r-xp 00000000 08:01 281237     /tmp/libgdxeka/417985b7/libopenal.so (deleted)
+b37f4000-b37f6000 r--p 0004d000 08:01 281237     /tmp/libgdxeka/417985b7/libopenal.so (deleted)
+b37f6000-b37f7000 rw-p 0004f000 08:01 281237     /tmp/libgdxeka/417985b7/libopenal.so (deleted)
+b37f7000-b37fb000 r-xp 00000000 08:01 393818     /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0
+b37fb000-b37fc000 r--p 00003000 08:01 393818     /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0
+b37fc000-b37fd000 rw-p 00004000 08:01 393818     /usr/lib/i386-linux-gnu/libXxf86vm.so.1.0.0
+b37fd000-b3806000 r-xp 00000000 08:01 393830     /usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+b3806000-b3807000 r--p 00008000 08:01 393830     /usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+b3807000-b3808000 rw-p 00009000 08:01 393830     /usr/lib/i386-linux-gnu/libXrandr.so.2.2.0
+b3808000-b3863000 r-xp 00000000 08:01 272540     /tmp/libgdxeka/417985b7/liblwjgl.so (deleted)
+b3863000-b3864000 ---p 0005b000 08:01 272540     /tmp/libgdxeka/417985b7/liblwjgl.so (deleted)
+b3864000-b3865000 r--p 0005b000 08:01 272540     /tmp/libgdxeka/417985b7/liblwjgl.so (deleted)
+b3865000-b3866000 rw-p 0005c000 08:01 272540     /tmp/libgdxeka/417985b7/liblwjgl.so (deleted)
+b3866000-b3869000 ---p 00000000 00:00 0 
+b3869000-b38b7000 rw-p 00000000 00:00 0          [stack:3935]
+b38b7000-b38bc000 r-xp 00000000 08:01 394541     /usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+b38bc000-b38bd000 r--p 00004000 08:01 394541     /usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+b38bd000-b38be000 rw-p 00005000 08:01 394541     /usr/lib/i386-linux-gnu/libXfixes.so.3.1.0
+b38be000-b38c7000 r-xp 00000000 08:01 393836     /usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+b38c7000-b38c8000 r--p 00008000 08:01 393836     /usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+b38c8000-b38c9000 rw-p 00009000 08:01 393836     /usr/lib/i386-linux-gnu/libXcursor.so.1.0.2
+b38c9000-b38cc000 ---p 00000000 00:00 0 
+b38cc000-b391a000 rw-p 00000000 00:00 0          [stack:3934]
+b391a000-b393a000 r-xp 00000000 08:01 399910     /usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+b393a000-b393b000 r--p 0001f000 08:01 399910     /usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+b393b000-b393c000 rw-p 00020000 08:01 399910     /usr/lib/i386-linux-gnu/libxcb.so.1.1.0
+b393c000-b394a000 r-xp 00000000 08:01 393810     /usr/lib/i386-linux-gnu/libXi.so.6.1.0
+b394a000-b394b000 r--p 0000d000 08:01 393810     /usr/lib/i386-linux-gnu/libXi.so.6.1.0
+b394b000-b394c000 rw-p 0000e000 08:01 393810     /usr/lib/i386-linux-gnu/libXi.so.6.1.0
+b394c000-b3a7f000 r-xp 00000000 08:01 394551     /usr/lib/i386-linux-gnu/libX11.so.6.3.0
+b3a7f000-b3a80000 r--p 00132000 08:01 394551     /usr/lib/i386-linux-gnu/libX11.so.6.3.0
+b3a80000-b3a83000 rw-p 00133000 08:01 394551     /usr/lib/i386-linux-gnu/libX11.so.6.3.0
+b3a83000-b3acc000 r-xp 00000000 08:01 319658     /opt/java/32/jre1.7.0_51/lib/i386/xawt/libmawt.so
+b3acc000-b3ace000 rw-p 00049000 08:01 319658     /opt/java/32/jre1.7.0_51/lib/i386/xawt/libmawt.so
+b3ace000-b3acf000 rw-p 00000000 00:00 0 
+b3acf000-b3b55000 r-xp 00000000 08:01 319654     /opt/java/32/jre1.7.0_51/lib/i386/libawt.so
+b3b55000-b3b5c000 rw-p 00086000 08:01 319654     /opt/java/32/jre1.7.0_51/lib/i386/libawt.so
+b3b5c000-b3b80000 rw-p 00000000 00:00 0 
+b3b80000-b3b9b000 r-xp 00000000 08:01 829        /lib/i386-linux-gnu/libgcc_s.so.1
+b3b9b000-b3b9c000 r--p 0001a000 08:01 829        /lib/i386-linux-gnu/libgcc_s.so.1
+b3b9c000-b3b9d000 rw-p 0001b000 08:01 829        /lib/i386-linux-gnu/libgcc_s.so.1
+b3b9d000-b3c79000 r-xp 00000000 08:01 394454     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b3c79000-b3c7a000 ---p 000dc000 08:01 394454     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b3c7a000-b3c7e000 r--p 000dc000 08:01 394454     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b3c7e000-b3c7f000 rw-p 000e0000 08:01 394454     /usr/lib/i386-linux-gnu/libstdc++.so.6.0.17
+b3c7f000-b3c86000 rw-p 00000000 00:00 0 
+b3c86000-b3c87000 rw-s 00000000 00:04 78052      /drm mm object (deleted)
+b3c87000-b3c88000 rw-s 00000000 00:04 78119      /drm mm object (deleted)
+b3c88000-b3c89000 rwxp 00000000 00:00 0 
+b3c89000-b3c8c000 r-xp 00000000 08:01 393797     /usr/lib/i386-linux-gnu/libxcb-dri2.so.0.0.0
+b3c8c000-b3c8d000 r--p 00003000 08:01 393797     /usr/lib/i386-linux-gnu/libxcb-dri2.so.0.0.0
+b3c8d000-b3c8e000 rw-p 00004000 08:01 393797     /usr/lib/i386-linux-gnu/libxcb-dri2.so.0.0.0
+b3c8e000-b3c8f000 r-xp 00000000 08:01 393782     /usr/lib/i386-linux-gnu/libX11-xcb.so.1.0.0
+b3c8f000-b3c90000 r--p 00000000 08:01 393782     /usr/lib/i386-linux-gnu/libX11-xcb.so.1.0.0
+b3c90000-b3c91000 rw-p 00001000 08:01 393782     /usr/lib/i386-linux-gnu/libX11-xcb.so.1.0.0
+b3c91000-b3c93000 r-xp 00000000 08:01 393813     /usr/lib/i386-linux-gnu/libXdamage.so.1.1.0
+b3c93000-b3c94000 r--p 00001000 08:01 393813     /usr/lib/i386-linux-gnu/libXdamage.so.1.1.0
+b3c94000-b3c95000 rw-p 00002000 08:01 393813     /usr/lib/i386-linux-gnu/libXdamage.so.1.1.0
+b3c95000-b3c9c000 r--s 00000000 08:01 441061     /usr/lib/i386-linux-gnu/gconv/gconv-modules.cache
+b3c9c000-b3d0e000 r-xp 00000000 08:01 267242     /tmp/libgdxeka/2535ec09/libgdx.so
+b3d0e000-b3d0f000 r--p 00072000 08:01 267242     /tmp/libgdxeka/2535ec09/libgdx.so
+b3d0f000-b3d10000 rw-p 00073000 08:01 267242     /tmp/libgdxeka/2535ec09/libgdx.so
+b3d10000-b3d11000 ---p 00000000 00:00 0 
+b3d11000-b3d91000 rw-p 00000000 00:00 0          [stack:3933]
+b3d91000-b3d94000 ---p 00000000 00:00 0 
+b3d94000-b3e12000 rw-p 00000000 00:00 0          [stack:3931]
+b3e12000-b3fcf000 r--s 031a3000 08:01 318856     /opt/java/32/jre1.7.0_51/lib/rt.jar
+b3fcf000-b4100000 r--p 001ca000 08:01 395793     /usr/lib/locale/locale-archive
+b4100000-b4300000 r--p 00000000 08:01 395793     /usr/lib/locale/locale-archive
+b4300000-b4321000 rw-p 00000000 00:00 0 
+b4321000-b4400000 ---p 00000000 00:00 0 
+b4400000-b4401000 rw-s 81000000 00:05 8372       /dev/snd/pcmC0D0p
+b4401000-b4402000 r--s 80000000 00:05 8372       /dev/snd/pcmC0D0p
+b4402000-b4407000 r-xp 00000000 08:01 393815     /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+b4407000-b4408000 r--p 00004000 08:01 393815     /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+b4408000-b4409000 rw-p 00005000 08:01 393815     /usr/lib/i386-linux-gnu/libXdmcp.so.6.0.0
+b4409000-b4411000 r-xp 00000000 08:01 394547     /usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+b4411000-b4412000 r--p 00008000 08:01 394547     /usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+b4412000-b4413000 rw-p 00009000 08:01 394547     /usr/lib/i386-linux-gnu/libXrender.so.1.3.0
+b4413000-b4416000 ---p 00000000 00:00 0 
+b4416000-b4464000 rw-p 00000000 00:00 0          [stack:3932]
+b4464000-b4467000 ---p 00000000 00:00 0 
+b4467000-b4500000 rw-p 00000000 00:00 0          [stack:3930]
+b4500000-b45f5000 rw-p 00000000 00:00 0 
+b45f5000-b4600000 ---p 00000000 00:00 0 
+b4600000-b4601000 rw-s 00000000 00:04 23363593   /SYSV0056a4d5 (deleted)
+b4601000-b4611000 r-xp 00000000 08:01 393799     /usr/lib/i386-linux-gnu/libXext.so.6.4.0
+b4611000-b4612000 r--p 0000f000 08:01 393799     /usr/lib/i386-linux-gnu/libXext.so.6.4.0
+b4612000-b4613000 rw-p 00010000 08:01 393799     /usr/lib/i386-linux-gnu/libXext.so.6.4.0
+b4613000-b4624000 r--s 0012b000 08:06 4590828    /home/eka/workspace/CrashLanding-desktop/libs/gdx-backend-lwjgl.jar
+b4624000-b463a000 r--s 00156000 08:06 4590816    /home/eka/workspace/CrashLanding/libs/gdx.jar
+b463a000-b463d000 ---p 00000000 00:00 0 
+b463d000-b468b000 rw-p 00000000 00:00 0          [stack:3929]
+b468b000-b468e000 ---p 00000000 00:00 0 
+b468e000-b46dc000 rw-p 00000000 00:00 0          [stack:3928]
+b46dc000-b46dd000 ---p 00000000 00:00 0 
+b46dd000-b4764000 rw-p 00000000 00:00 0          [stack:3927]
+b4764000-b477e000 rw-p 00000000 00:00 0 
+b477e000-b4784000 rw-p 00000000 00:00 0 
+b4784000-b47d4000 rw-p 00000000 00:00 0 
+b47d4000-b47d7000 rw-p 00000000 00:00 0 
+b47d7000-b47fe000 rw-p 00000000 00:00 0 
+b47fe000-b4804000 rw-p 00000000 00:00 0 
+b4804000-b4854000 rw-p 00000000 00:00 0 
+b4854000-b485a000 rw-p 00000000 00:00 0 
+b485a000-b4874000 rw-p 00000000 00:00 0 
+b4874000-b4888000 rw-p 00000000 00:00 0 
+b4888000-b4900000 rw-p 00000000 00:00 0 
+b4900000-b4ac8000 rwxp 00000000 00:00 0 
+b4ac8000-b6a00000 rw-p 00000000 00:00 0 
+b6a00000-b6a01000 r-xp 00000000 08:01 319699     /opt/java/32/jre1.7.0_51/lib/i386/libjawt.so
+b6a01000-b6a02000 rw-p 00000000 08:01 319699     /opt/java/32/jre1.7.0_51/lib/i386/libjawt.so
+b6a02000-b6a07000 r-xp 00000000 08:01 393840     /usr/lib/i386-linux-gnu/libXtst.so.6.1.0
+b6a07000-b6a08000 r--p 00004000 08:01 393840     /usr/lib/i386-linux-gnu/libXtst.so.6.1.0
+b6a08000-b6a09000 rw-p 00005000 08:01 393840     /usr/lib/i386-linux-gnu/libXtst.so.6.1.0
+b6a09000-b6a20000 r-xp 00000000 08:01 319713     /opt/java/32/jre1.7.0_51/lib/i386/libzip.so
+b6a20000-b6a21000 rw-p 00017000 08:01 319713     /opt/java/32/jre1.7.0_51/lib/i386/libzip.so
+b6a21000-b6a2c000 r-xp 00000000 08:01 19372      /lib/i386-linux-gnu/libnss_files-2.17.so
+b6a2c000-b6a2d000 r--p 0000a000 08:01 19372      /lib/i386-linux-gnu/libnss_files-2.17.so
+b6a2d000-b6a2e000 rw-p 0000b000 08:01 19372      /lib/i386-linux-gnu/libnss_files-2.17.so
+b6a2e000-b6a38000 r-xp 00000000 08:01 46059      /lib/i386-linux-gnu/libnss_nis-2.17.so
+b6a38000-b6a39000 r--p 00009000 08:01 46059      /lib/i386-linux-gnu/libnss_nis-2.17.so
+b6a39000-b6a3a000 rw-p 0000a000 08:01 46059      /lib/i386-linux-gnu/libnss_nis-2.17.so
+b6a3a000-b6a4f000 r-xp 00000000 08:01 18794      /lib/i386-linux-gnu/libnsl-2.17.so
+b6a4f000-b6a50000 r--p 00014000 08:01 18794      /lib/i386-linux-gnu/libnsl-2.17.so
+b6a50000-b6a51000 rw-p 00015000 08:01 18794      /lib/i386-linux-gnu/libnsl-2.17.so
+b6a51000-b6a53000 rw-p 00000000 00:00 0 
+b6a53000-b6a5a000 r-xp 00000000 08:01 19715      /lib/i386-linux-gnu/libnss_compat-2.17.so
+b6a5a000-b6a5b000 r--p 00006000 08:01 19715      /lib/i386-linux-gnu/libnss_compat-2.17.so
+b6a5b000-b6a5c000 rw-p 00007000 08:01 19715      /lib/i386-linux-gnu/libnss_compat-2.17.so
+b6a5c000-b6a5e000 r-xp 00000000 08:01 393804     /usr/lib/i386-linux-gnu/libXau.so.6.0.0
+b6a5e000-b6a5f000 r--p 00001000 08:01 393804     /usr/lib/i386-linux-gnu/libXau.so.6.0.0
+b6a5f000-b6a60000 rw-p 00002000 08:01 393804     /usr/lib/i386-linux-gnu/libXau.so.6.0.0
+b6a60000-b6a61000 r--s 00127000 08:06 4590829    /home/eka/workspace/CrashLanding-desktop/libs/gdx-natives.jar
+b6a61000-b6a63000 r--s 001a1000 08:06 4590830    /home/eka/workspace/CrashLanding-desktop/libs/gdx-backend-lwjgl-natives.jar
+b6a63000-b6a64000 r--p 00935000 08:01 395793     /usr/lib/locale/locale-archive
+b6a64000-b6a65000 r--p 00d84000 08:01 395793     /usr/lib/locale/locale-archive
+b6a65000-b6a72000 rw-p 00000000 00:00 0 
+b6a72000-b6a95000 r-xp 00000000 08:01 319677     /opt/java/32/jre1.7.0_51/lib/i386/libjava.so
+b6a95000-b6a96000 rw-p 00022000 08:01 319677     /opt/java/32/jre1.7.0_51/lib/i386/libjava.so
+b6a96000-b6a9d000 r-xp 00000000 08:01 46058      /lib/i386-linux-gnu/librt-2.17.so
+b6a9d000-b6a9e000 r--p 00006000 08:01 46058      /lib/i386-linux-gnu/librt-2.17.so
+b6a9e000-b6a9f000 rw-p 00007000 08:01 46058      /lib/i386-linux-gnu/librt-2.17.so
+b6a9f000-b6aa2000 ---p 00000000 00:00 0 
+b6aa2000-b6af0000 rw-p 00000000 00:00 0          [stack:3922]
+b6af0000-b6b31000 r-xp 00000000 08:01 46055      /lib/i386-linux-gnu/libm-2.17.so
+b6b31000-b6b32000 r--p 00040000 08:01 46055      /lib/i386-linux-gnu/libm-2.17.so
+b6b32000-b6b33000 rw-p 00041000 08:01 46055      /lib/i386-linux-gnu/libm-2.17.so
+b6b33000-b70b9000 r-xp 00000000 08:01 319672     /opt/java/32/jre1.7.0_51/lib/i386/client/libjvm.so
+b70b9000-b70da000 rw-p 00586000 08:01 319672     /opt/java/32/jre1.7.0_51/lib/i386/client/libjvm.so
+b70da000-b74fb000 rw-p 00000000 00:00 0 
+b74fb000-b76a9000 r-xp 00000000 08:01 46056      /lib/i386-linux-gnu/libc-2.17.so
+b76a9000-b76ab000 r--p 001ae000 08:01 46056      /lib/i386-linux-gnu/libc-2.17.so
+b76ab000-b76ac000 rw-p 001b0000 08:01 46056      /lib/i386-linux-gnu/libc-2.17.so
+b76ac000-b76af000 rw-p 00000000 00:00 0 
+b76af000-b76b2000 r-xp 00000000 08:01 46061      /lib/i386-linux-gnu/libdl-2.17.so
+b76b2000-b76b3000 r--p 00002000 08:01 46061      /lib/i386-linux-gnu/libdl-2.17.so
+b76b3000-b76b4000 rw-p 00003000 08:01 46061      /lib/i386-linux-gnu/libdl-2.17.so
+b76b4000-b76c7000 r-xp 00000000 08:01 319681     /opt/java/32/jre1.7.0_51/lib/i386/jli/libjli.so
+b76c7000-b76c8000 rw-p 00012000 08:01 319681     /opt/java/32/jre1.7.0_51/lib/i386/jli/libjli.so
+b76c8000-b76c9000 rw-p 00000000 00:00 0 
+b76c9000-b76e0000 r-xp 00000000 08:01 46054      /lib/i386-linux-gnu/libpthread-2.17.so
+b76e0000-b76e1000 r--p 00016000 08:01 46054      /lib/i386-linux-gnu/libpthread-2.17.so
+b76e1000-b76e2000 rw-p 00017000 08:01 46054      /lib/i386-linux-gnu/libpthread-2.17.so
+b76e2000-b76e4000 rw-p 00000000 00:00 0 
+b76e4000-b76ec000 rw-s 00000000 08:01 265622     /tmp/hsperfdata_eka/3920
+b76ec000-b76ed000 rw-p 00000000 00:00 0 
+b76ed000-b76ee000 r--p 00000000 00:00 0 
+b76ee000-b76f9000 r-xp 00000000 08:01 319659     /opt/java/32/jre1.7.0_51/lib/i386/libverify.so
+b76f9000-b76fa000 rw-p 0000b000 08:01 319659     /opt/java/32/jre1.7.0_51/lib/i386/libverify.so
+b76fa000-b76fc000 rw-p 00000000 00:00 0 
+b76fc000-b76fd000 r-xp 00000000 00:00 0          [vdso]
+b76fd000-b771d000 r-xp 00000000 08:01 46057      /lib/i386-linux-gnu/ld-2.17.so
+b771d000-b771e000 r--p 0001f000 08:01 46057      /lib/i386-linux-gnu/ld-2.17.so
+b771e000-b771f000 rw-p 00020000 08:01 46057      /lib/i386-linux-gnu/ld-2.17.so
+bfcfb000-bfd1c000 rw-p 00000000 00:00 0          [stack]
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 
+java_command: com.balitechy.crashlanding.Main
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+LD_LIBRARY_PATH=/opt/java/32/jre1.7.0_51/lib/i386/client:/opt/java/32/jre1.7.0_51/lib/i386:
+SHELL=/bin/bash
+DISPLAY=:0.0
+
+Signal Handlers:
+SIGSEGV: [libjvm.so+0x5047e0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGBUS: [libjvm.so+0x5047e0], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGFPE: [libjvm.so+0x3fc850], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGPIPE: [libjvm.so+0x3fc850], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGXFSZ: [libjvm.so+0x3fc850], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGILL: [libjvm.so+0x3fc850], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGUSR1: SIG_DFL, sa_mask[0]=0x00000000, sa_flags=0x00000000
+SIGUSR2: [libjvm.so+0x3fdd40], sa_mask[0]=0x00000004, sa_flags=0x10000004
+SIGHUP: [libjvm.so+0x3fee90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGINT: [libjvm.so+0x3fee90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGTERM: [libjvm.so+0x3fee90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+SIGQUIT: [libjvm.so+0x3fee90], sa_mask[0]=0x7ffbfeff, sa_flags=0x10000004
+
+
+---------------  S Y S T E M  ---------------
+
+OS:wheezy/sid
+
+uname:Linux 3.8.0-35-generic #50-Ubuntu SMP Tue Dec 3 01:25:33 UTC 2013 i686
+libc:glibc 2.17 NPTL 2.17 
+rlimit: STACK 8192k, CORE 0k, NPROC 13434, NOFILE 4096, AS infinity
+load average:0,20 0,19 0,19
+
+/proc/meminfo:
+MemTotal:        1736208 kB
+MemFree:          113336 kB
+Buffers:           16600 kB
+Cached:           560344 kB
+SwapCached:         4324 kB
+Active:           780628 kB
+Inactive:         768292 kB
+Active(anon):     581088 kB
+Inactive(anon):   591372 kB
+Active(file):     199540 kB
+Inactive(file):   176920 kB
+Unevictable:           4 kB
+Mlocked:               4 kB
+HighTotal:        877584 kB
+HighFree:          11072 kB
+LowTotal:         858624 kB
+LowFree:          102264 kB
+SwapTotal:       2000892 kB
+SwapFree:        1930628 kB
+Dirty:              1032 kB
+Writeback:             0 kB
+AnonPages:        968084 kB
+Mapped:           133932 kB
+Shmem:            200300 kB
+Slab:              41076 kB
+SReclaimable:      27476 kB
+SUnreclaim:        13600 kB
+KernelStack:        3552 kB
+PageTables:        12372 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2868996 kB
+Committed_AS:    3494316 kB
+VmallocTotal:     122880 kB
+VmallocUsed:       14096 kB
+VmallocChunk:     108076 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       10232 kB
+DirectMap2M:      903168 kB
+
+
+CPU:total 2 (2 cores per cpu, 1 threads per core) family 6 model 58 stepping 9, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, erms, tsc, tscinvbit, tscinv
+
+/proc/cpuinfo:
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Pentium(R) CPU G2010 @ 2.80GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2800.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 2
+core id		: 0
+cpu cores	: 2
+apicid		: 0
+initial apicid	: 0
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave lahf_lm arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 5587.62
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 58
+model name	: Intel(R) Pentium(R) CPU G2010 @ 2.80GHz
+stepping	: 9
+microcode	: 0x15
+cpu MHz		: 2800.000
+cache size	: 3072 KB
+physical id	: 0
+siblings	: 2
+core id		: 1
+cpu cores	: 2
+apicid		: 2
+initial apicid	: 2
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 popcnt tsc_deadline_timer xsave lahf_lm arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips	: 5587.62
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 36 bits physical, 48 bits virtual
+power management:
+
+
+
+Memory: 4k page, physical 1736208k(113336k free), swap 2000892k(1930628k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.51-b03) for linux-x86 JRE (1.7.0_51-b13), built on Dec 18 2013 18:49:34 by "java_re" with gcc 4.3.0 20080428 (Red Hat 4.3.0-8)
+
+time: Fri Feb 28 23:51:35 2014
+elapsed time: 48 seconds
+
